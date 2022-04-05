@@ -1,0 +1,136 @@
+/* Variables */
+:root {
+  --primary-color: rgb(0, 221, 255);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.fa-dove {
+  color: var(--primary-color);
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+/* Home */
+#home {
+  background: url("../../img/Leo.png") no-repeat center center/ cover;
+  height: 89.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Home Area */
+#home .home-content h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin: 0;
+}
+
+#home .home-content p {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0.5rem 10rem;
+}
+
+#home .home-content a {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+#home .home-content .separator {
+  padding-left: 5px;
+}
+
+/* Section A */
+
+#section-a {
+  /* padding: 0 2rem; */
+  margin: 0 2rem;
+}
+
+#section-a .section-title {
+  font-size: 1.7rem;
+}
+
+#section-a .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 0 1rem;
+}
+
+#section-a .card-a {
+  background: rgb(98, 98, 98);
+  border-bottom: 5px solid var(--primary-color);
+  color: #fff;
+}
+
+#section-a .card-title {
+  font-size: 2rem;
+  margin: 0.75rem 0;
+}
+
+#section-a .card-a ul {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+#section-a .card-a ul li {
+  font-size: 1.5rem;
+  text-decoration: underline var(--primary-color);
+  text-underline-offset: 0.3rem;
+}
+
+/* Footer */
+#main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  height: 50px;
+}
+
+#main-footer h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  #home {
+    height: 91vh;
+  }
+
+  #home .home-content .home-header {
+    font-size: 2rem;
+  }
+
+  #home .home-content .home-paragraph {
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
+    max-height: 50rem;
+  }
+
+  #section-a .container {
+    grid-template-columns: 1fr;
+  }
+}

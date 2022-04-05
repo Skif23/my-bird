@@ -1,0 +1,74 @@
+:root {
+  --primary-color: rgb(0, 221, 255);
+}
+
+#main-navbar {
+  display: flex;
+  min-height: 4rem;
+  background: #fff;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+}
+
+#main-navbar h1 {
+  font-size: 1.5rem;
+}
+
+#main-navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#main-navbar ul li {
+  padding-right: 2rem;
+}
+
+.home,
+.about {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#main-navbar ul li a:hover {
+  border-bottom: none;
+  transition: border 500ms;
+}
+
+#main-navbar ul li a:hover {
+  border-bottom: 2.5px solid var(--primary-color);
+}
+
+#main-navbar .fa-dove {
+  color: var(--primary-color);
+}
+
+#main-navbar .fa-house {
+  color: var(--primary-color);
+  padding-right: 5px;
+}
+
+#main-navbar .fa-circle-info {
+  color: var(--primary-color);
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+  #main-navbar {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  #main-navbar h1 {
+    font-size: 0.9rem;
+    padding-left: 1.2rem;
+  }
+
+  #main-navbar a {
+    font-size: 0.7rem;
+  }
+}

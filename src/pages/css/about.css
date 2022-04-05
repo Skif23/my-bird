@@ -1,0 +1,126 @@
+:root {
+  --primary-color: rgb(0, 221, 255);
+  --secondary-color: rgb(97, 242, 35);
+  --primary-font: Arial, Helvetica, sans-serif;
+  --border-bottom: 2px solid var(--primary-color);
+  --side-margin: 0 1rem;
+}
+
+#section-about-a .container {
+  font-family: var(--primary-font);
+  border-bottom: var(--border-bottom);
+}
+
+#section-about-a .card-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+#section-about-a .bio {
+  text-align: center;
+  margin: auto;
+  padding: 0 20rem 1rem 20rem;
+}
+
+#section-about-a .card-leo {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  background: url("../../img/Leo-2.png") no-repeat center center / cover;
+  border-radius: 100%;
+}
+
+#section-about-b .container {
+  font-family: var(--primary-font);
+  border-bottom: var(--border-bottom);
+}
+
+#section-about-b .card-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+#section-about-b .story {
+  padding: 0 5rem;
+}
+
+#section-about-c .container {
+  font-family: var(--primary-font);
+}
+
+#section-about-c .card-title {
+  color: var(--secondary-color);
+}
+
+#section-about-c .friend {
+  text-align: center;
+  margin: auto;
+  padding: 0 20rem 1rem 20rem;
+}
+
+#section-about-c .card-chiki {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  background: url("../../img/Chiki.jpg") no-repeat center center / cover;
+  border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+  #section-about-a .container {
+    margin: var(--side-margin);
+    font-family: var(--primary-font);
+    border-bottom: var(--border-bottom);
+  }
+
+  #section-about-a .card-title {
+    color: var(--primary-color);
+  }
+
+  #section-about-a .bio {
+    padding: 0 0 1rem 0;
+  }
+
+  #section-about-a .card-leo {
+    min-height: 10rem;
+    max-width: 50%;
+    margin: auto;
+    background: url("../../img/Leo-2.png") no-repeat center center / cover;
+    border-radius: 100%;
+  }
+
+  #section-about-b .container {
+    margin: var(--side-margin);
+    font-family: var(--primary-font);
+    border-bottom: var(--border-bottom);
+  }
+
+  #section-about-b .card-title {
+    color: var(--primary-color);
+  }
+
+  .card-story .story {
+    font-size: 0.9rem;
+  }
+
+  #section-about-c .container {
+    margin: var(--side-margin);
+    font-family: var(--primary-font);
+  }
+
+  #section-about-c .card-title {
+    color: var(--secondary-color);
+  }
+
+  #section-about-c .friend {
+    padding: 0 0 1rem 0;
+  }
+
+  #section-about-c .card-chiki {
+    min-height: 10rem;
+    max-width: 50%;
+    margin: auto;
+    background: url("../../img/Chiki.jpg") no-repeat center center / cover;
+    border-radius: 100%;
+  }
+}
